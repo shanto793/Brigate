@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 100%;
+            padding: 10;
+            display: block;
+            margin-top: 20px;
+        }
+        #bossId{
+            width: 300px;
+            margin: auto;
+            box-sizing: border-box;
+            border:2px solid lime;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+     
+<div id="bossId">  
+
+<input type="text" name="" id="name" placeholder="Name">
+<input type="text" name="" id="Author" placeholder="Author" >
+<input type="submit" name="" id="btn" value="Button">
+
+</div>
+     
+
+<script>
+    console.log("xxx")
+
+const name=document.getElementById('name');
+const author=document.getElementById('Author');
+const btn=document.getElementById('btn');
+
+btn.addEventListener("click",x=>{
+
+   x.preventDefault();
+
+    if(name.value==="" && author.value==="" ){
+    alert('FIll up input box ..!!!!!!!!');
+console.log('Yeahghhh')
+}
+})
+
+
+
+
+
+
+
+</script>
+ 
+
+
+</body>
+</html>

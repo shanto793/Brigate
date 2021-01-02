@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+}
+section{
+    padding: 80px 0px;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+
+}
+header#topBar {
+    background: #f5f5f5;
+}
+.container {
+    width: 1240px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+.phone {
+    width: 210px;
+    float: left;
+    padding: 15px 10px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.email {
+    width: 770px;
+    float: left;
+    padding: 15px 10px;
+}
+.social {
+    width: 200px;
+    float: left;
+}
+.topbar-Wrapper {
+    overflow: hidden;
+}
+.topbarMain{
+
+}
+.social a{
+    display: block;
+    float: left;
+    padding: 18px;
+    border-right:1px solid #ddd;
+    transition: 0.3s;
+    
+}
+.social a:first-child{
+    border-left: 1px solid #ddd;
+
+}
+.social a:hover{
+    color: #ff5200;
+}
+.phone i{
+    color: #ff5200;
+}
+.email i{
+    color: #ff5200;
+}
+.prmaryWrapper{
+    /* overflow: hidden; */
+    display: table;
+}
+.logo {
+    width: 150px;
+    float: left;
+    margin-top: 20px;
+
+}
+
+.menu {
+    width: 990px;
+    float: left;
+}
+ul.mainMenu {
+    list-style: none;
+    float: right;
+}
+ul.mainMenu li{
+    float: left;
+    position: relative;
+    transition: .3s;
+    
+ 
+}
+
+.subMenu{
+    position:absolute;
+    background:white;
+    transform-origin: top;
+    transform: scaleY(0);
+    visibility: hidden;
+   top:unset;
+  transition: .3s;
+}
+
+
+ul.mainMenu li:hover  .subMenu{
+    visibility:visible;
+    transform:scaleY(1);
+}
+
+
+ul.mainMenu li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'oswald';
+    text-transform: uppercase;
+    display: block;
+    padding: 30px 16px;
+    color: #0e0e0e;
+    font-weight: 500;
+    transition: 0.3s;
+}
+ul.mainMenu li a:hover{
+    color: #ff5200;
+}
+#homeSlider{
+    background-image: url(slide-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    padding: 0;
+}
+.sliderContant{
+    color: white;
+}
+.sliderContant h1 {
+    font-size: 40px;
+    font-weight: 700;
+    width: 500px;
+    margin-bottom: 25px;
+    margin-top: 120px;
+    float: left;
+
+}
+.sliderContant p{
+    font-weight: 700px;
+    line-height: 25px;
+    width: 450px;
+    margin-bottom: 30px;
+}
+button#sliderbtn {
+    background: #ff5200;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 120px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+button#sliderbtn:hover{
+    background:  #0e0e0e;
+}
+
+.slideNavigation {
+    width: 60px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.slideNavigation span {
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border: 4px solid #ddd;
+    display: block;
+    float: left;
+    margin: 5px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slideNavigation span:last-child{
+    background: #ff5200;
+    border-color: #ff5200;
+
+}
+#services{
+    background: #f5f6f6;
+}
+.sboxWrapper{
+    overflow: hidden;
+}
+.singleBox{
+    width: 225px;
+    background: white;
+    padding: 15px;
+    float: left;
+    margin-right: 30px;
+    transition: 0.3s;
+
+}
+.singleBox i{
+    color:  #fb5200;
+}
+.singleBox:hover{
+    background: #fb5200;
+    color: white;
+    cursor: pointer;
+}
+.singleBox:hover h2, i {
+    color: white;
+}
+.singleBox:hover .sboxLink a{
+    color: white;
+}
+.sboxTitle{
+    text-align: center;
+
+}
+.sboxTitle h2{
+    font-size: 26px;
+    letter-spacing: -1.1px;
+    color: #333;
+    text-transform: uppercase;
+    line-height: 32px;
+    margin: 25px 0px;
+
+}
+.sboxTitle{
+    width: 230px;
+    margin: auto;
+    line-height: 26px;
+    font-size: 26px;
+   
+
+}
+.sboxIcon {
+    text-align: center;
+    font-size: 40px;
+    color: #fb5200;
+    margin: 25px 0px;
+}
+.sboxDesc {
+    text-align: center;
+    margin: 25px 0px;
+}
+
+
+    
+
+.sboxLink {
+    width: 25px;
+    margin: auto;
+    text-align: center;
+}
+.sboxLink a{
+    text-decoration: none;
+    color: #fb5200;
+    font-weight: 400px;
+    margin: 25px 0px;
+    text-align: center;
+
+}
+.sboxLink {
+    width: 94px;
+    margin-bottom:20px
+}
+.sboxsctive{
+    background: #fb5200;
+    color: white;
+}
+.sboxsctive h2{
+    color: white;
+}
+.sboxsctive i{
+    color: white;
+}
+.sboxsctive a{
+    color: white;
+}
+.sboxsctive .fa-arrow-right{
+    color: #fb5200;
+}
+.sboxsctive:hover i.fa-arrow-right{
+    color: white;
+}
+
+.singleBox:hover i{
+    color: white;
+}
+.sboxicon .fa{
+    color: #fb5200;
+}
+.singleBox:hover.fa-arrow-right{color: white;}
+
+.sboxTitle h2:hover{
+    color: white;
+}
+.icon{
+    color:black;
+    transition:.3s;
+}
+.icon:hover{
+    color: #ff5200;
+    transform:scale(1.4)
+}
+
+
+
+
+
+
+.teamcContents {
+    overflow: hidden;
+}
+
+.teamImge {
+    width: 600px;
+    float: left;
+}
+.teamImge img{
+    width: 100%;
+
+}
+.teamDetails {
+    width: 600px;
+    float: right;
+}
+.titleDesc h2{
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.titleDesc p{
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #333;
+
+
+
+}
+
+.teamFacalitis ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 300px;
+    float: left;
+    margin-bottom: 46px;
+    transition: 0.3s;
+}
+.teamFacalitis ul li{
+    line-height: 40px;
+
+}
+.teamFacalitis ul li a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+.teamFacalitis ul li a:hover{
+    color: #fb5200;
+}
+.teamcontactBtn a{
+    background: #fb5200;
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    font-weight: 600;
+
+
+
+
+}
+.teamcontactBtn a:hover{
+    background: #333;
+    color: white;
+
+}
+
+
+
+#whychoseUs{
+    background:linear-gradient(#00000073,#00000073), url(why-choose-us1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.iconWrapper{
+    overflow: hidden;
+
+}
+.singleIcons{
+    color: white;
+    text-align: center;
+    width: 300px;
+    float: left;
+    cursor: pointer;
+    
+}
+.singleIcons h2{
+    font-size: 55px;
+    font-weight: 900;
+    margin: 10px 0px;
+    font-family: arial black;
+    cursor: pointer;
+
+}
+.singleIcons h4{
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+
+#blockPosts{
+    background: #f5f6f6;
+
+
+
+}
+.secTItle{
+    text-align: center;
+}
+.secTItle h2{
+    font-size: 45px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+
+}
+.secTItle h2:after{
+    content: "";
+    position: absolute;
+    background: #fb5200;
+    width: 80px;
+    border: 2px solid #fb5200;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.secTItle p{
+    color: #666;
+    width: 494px;
+    margin: auto;
+    line-height: 30px;
+    padding-bottom: 37px;
+
+}
+.postWrapper{
+    overflow: hidden;
+
+}
+.singlePost{
+    width: 287px;
+    overflow: hidden;
+    float: left;
+    margin-right: 30px;
+
+
+}
+.singlePost:last-child{
+    margin:0px;
+}
+
+.singlePost img{
+    width: 100%;
+
+}
+.postImge img{
+    margin-bottom: 15px;
+
+}
+.postInfo p{
+    margin-top: 10px;
+    color: #666;
+    line-height: 24px;
+
+}
+
+
+
+
+.tableList{
+    display: table;
+    float: left;
+    background: #FAFAFA;
+}
+.singleTable{
+    width: 316px;
+    overflow: hidden;
+    float: left;
+    border: 1px solid #eaeaea;
+    padding: 30px;
+    margin-right: 35px;
+    background: white;
+
+}
+.singleTable:first-child{
+    box-shadow: -20px 0px 8px #f6f6f6;
+}
+
+.singleTable h3{
+    font-size: 30px;
+    font-weight: arial black;
+
+}
+.singleTable h1{
+    font-size: 50px;
+    font-weight: 900;
+    font-weight: arial black;
+    margin: 10px 0px;
+
+
+}
+.singleTable h1 span{
+    font-size: 24px;
+    margin-left:1px;
+
+}
+.singleTable ul{
+    list-style: none;
+    line-height: 40px;
+    color: #666;
+
+}
+
+button#getstarted {
+    background: #fb5200;
+    padding: 17px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius:5px;
+    transition:.3s;
+    cursor: pointer;
+    margin-top: 15px;
+    padding-left: 8px;
+    font-weight: 'oswald';
+    letter-spacing: 1px;
+
+}
+button#getstarted:hover{
+    background: #333;
+    color: white;
+}
+
+
+
+
+
+
+.idaleftimge{
+    background:url(s02.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    float: left;
+    height: 479px;
+  
+  
+}
+#idas{
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+   
+    
+
+
+}
+.rightContent{
+    width: 50%;
+    float: right;
+    overflow: hidden;
+    background: #222222;
+    color: white;
+
+
+}
+.rcontentTitle{
+    padding: 90px;
+
+}
+.rcontentTitle h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+    margin-top: -81px;
+}
+.rcontentTitle p{
+    line-height: 30px;
+   
+
+}
+.riconTitle p{
+    margin-top: 10px;
+}
+
+.riconSingle{
+    width: 290px;
+    float: left;
+    overflow: hidden;
+
+}
+.rIcon{
+    width: 90px;
+    overflow: hidden;
+    float: left;
+
+}
+
+
+.riconTitle{
+    width: 219px;
+    float: right;
+    overflow: hidden;
+
+    
+
+
+}.rIcon img{
+    font-size: 60px;
+    color: #fb5200;
+}
+
+
+
+
+
+
+
+
+
+.teamPersons{
+    overflow: hidden;
+
+}
+.singlePerson{
+    width: 283px;
+    overflow: hidden;
+    float: left;
+    margin-right:34px;
+
+}
+
+.singlePerson:last-child{
+    margin-right: 0px;
+
+}
+.singlePerson img{
+    width: 100%;
+
+}
+.personInfo {
+    font-size: 19px;
+    padding: 15px 20px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+
+}
+.personInfo p{
+    font-size: 16px;
+    color: #666;
+    margin-top: 7px;
+}
+
+.joinBtn {
+    padding: 60px;
+    display: grid;
+    place-items: center;
+}
+
+
+.joinBtn button {
+    padding: 14px 46px;
+    background: #333;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: .3s;
+    font-family: 'oswald';
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+
+.joinBtn button:hover{
+    background:#fb5200
+}
+i.fab.fa-twitter-square {
+    color: red;
+}
+i.fab.fa-facebook-square {
+    color: red;
+}
+i.fabfa-google-plusr-square {
+    color: red;
+}
+i.fabfa-linkedin-in-square {
+    color: red;
+}
